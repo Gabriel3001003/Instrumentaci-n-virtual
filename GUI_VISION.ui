@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>661</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
+    </property>
+    <widget class="QPushButton" name="inciar_video">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start video</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Stop_video">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>290</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop Video</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Bordes">
+     <property name="geometry">
+      <rect>
+       <x>324</x>
+       <y>290</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Detectar bordes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Binario">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>290</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Binarizar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Grises">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>290</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Escala de grises</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CanalRojo">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>340</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Canal rojo</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CanalAzul">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>340</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Canal azul </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CanalVerde">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>340</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Canal verde</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Gaussiano">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>380</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gaussiano</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_original">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_procesado">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>50</y>
+       <width>281</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionSAlir"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSAlir">
+   <property name="text">
+    <string>SAlir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
