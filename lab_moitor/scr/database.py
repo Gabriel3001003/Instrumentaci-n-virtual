@@ -35,4 +35,3 @@ class DataBase:
         
         with sqlite3.connect(self.db_path) as conn:
             return pd.read_sql_query(query, conn, params=(sensor, limite))
-

@@ -39,8 +39,8 @@ def display_blue_channel(frame):
     return cv2.merge([img_blue, np.zeros_like(img_blue), np.zeros_like(img_blue)])  # Mantener solo el canal azul
 
 def display_green_channel(frame):
-    img_green = frame[:, :, 1]  # Extraer el canal azul
-    return cv2.merge([img_green, np.zeros_like(img_green), np.zeros_like(img_green)])  # Mantener solo el canal verde
+    img_green = frame[:, :, 1]  # Extraer el canal verde
+    return cv2.merge([np.zeros_like(img_green), img_green, np.zeros_like(img_green)])  # Mantener solo el canal verde
 
 def convert_to_grayscale(frame):
     return cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Convertir a escala de grises
@@ -65,6 +65,10 @@ def set_red_channel_mode():
 def set_blue_channel_mode():
     global proceso
     proceso = 'canal_azul'
+
+def set_green_channel_mode():
+    global proceso
+    proceso = 'canal_verde'
 
 def set_grayscale_mode():
     global proceso
@@ -98,8 +102,8 @@ class VideoThread(QThread):
                     processed_frame = display_red_channel(frame)
                 elif proceso == 'canal_azul':
                     processed_frame = display_blue_channel(frame)
-                elif proceso == 'canal verde':
-                     processed_frame = display_green_chanel(frame)   
+                elif proceso == 'canal_verde':
+                    processed_frame = display_green_channel(frame)
                 elif proceso == 'escala_grises':
                     processed_frame = convert_to_grayscale(frame)
                 elif proceso == 'binarizacion':
@@ -138,11 +142,11 @@ def detener_video():
 gui.inciar_video.clicked.connect(iniciar_video)
 gui.Bordes.clicked.connect(set_edge_detection_mode)
 gui.Gaussiano.clicked.connect(set_filter_mode)
-gui.CanalRojo.clicked.connect(set_red_channel_mode)  # Nuevo botón Canal Rojo
-gui.CanalAzul.clicked.connect(set_blue_channel_mode)  # Nuevo botón Canal Azul
-gui.CanalAzul.clicked.connect(set_blue_channel_mode)  # Nuevo botón Canal verde
-gui.Grises.clicked.connect(set_grayscale_mode)  # Nuevo botón Escala de Grises
-gui.Binario.clicked.connect(set_binarization_mode)  # Nuevo botón Binarización
+gui.CanalRojo.clicked.connect(set_red_channel_mode)  # Botón Canal Rojo
+gui.CanalAzul.clicked.connect(set_blue_channel_mode)  # Botón Canal Azul
+gui.CanalVerde.clicked.connect(set_green_channel_mode)  # Nuevo botón Canal Verde
+gui.Grises.clicked.connect(set_grayscale_mode)  # Botón Escala de Grises
+gui.Binario.clicked.connect(set_binarization_mode)  # Botón Binarización
 gui.actionSAlir.triggered.connect(detener_video)
 
 gui.show()
