@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Rodolfo",
+        "apellido": "Reyes",
+        "uid": "D3 E3 D8 26",
+        "fecha_registro": "2024-09-25 13:33:41"
+    },
+    {
+        "nombre": "Rodolfo",
+        "apellido": "Reyes",
+        "uid": "D3 E3 D8 26",
+        "fecha_registro": "2024-09-30 08:09:24"
+    },
+    {
+        "nombre": "Rodolfo",
+        "apellido": "Reyes",
+        "uid": "D3 E3 D8 26",
+        "fecha_registro": "2024-09-30 08:12:55"
+    },
+    {
+        "nombre": "Gabriel",
+        "apellido": "Garc\u00eda",
+        "uid": "04 D1 D4 DC 22 02 89",
+        "fecha_registro": "2024-10-04 07:28:34"
+    },
+    {
+        "nombre": "Jimmy",
+        "apellido": "Reyes",
+        "uid": "FA D5 11 35",
+        "fecha_registro": "2024-10-11 08:44:36"
+    },
+    {
+        "nombre": "Gabriel",
+        "apellido": "Garcia",
+        "uid": "93 A9 0D F8",
+        "fecha_registro": "2024-10-11 08:44:47"
+    }
+]

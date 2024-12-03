@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "mesa",
+        "data": "UURH0ECL",
+        "ruta": "C:/Users/rreye/OneDrive/Documentos/IET LA SALLE BAJIO/IET 7mo Semestre/Proyecto Semestral/Base datos/Base 2/Mesa.png",
+        "foto": "fotos_qr\\UURH0ECL_foto.png"
+    },
+    {
+        "nombre": "Plumones",
+        "data": "1CXV13EZ",
+        "ruta": "C:/Users/rreye/OneDrive/Documentos/IET LA SALLE BAJIO/IET 7mo Semestre/Proyecto Semestral/Base datos/Base 1/Plumones.png",
+        "foto": "fotos_qr\\1CXV13EZ_foto.png"
+    },
+    {
+        "nombre": "Hola",
+        "data": "XVC142GM",
+        "ruta": "C:/Users/rreye/OneDrive/Documentos/IET LA SALLE BAJIO/IET 7mo Semestre/Proyecto Semestral/Base datos/Base 2/Lupas.png",
+        "foto": ""
+    }
+]
